@@ -1,4 +1,4 @@
-This GitHub repository contains the code used for the DPMM algorithm and the Composite Individual-Level Model (C-ILM) framework, including both simulation studies and the real-world data application described in our ArXiv paper.
+This GitHub repository contains the code used for the DPMM algorithm and the Composite Individual-Level Model (C-ILM) framework, including both simulation studies and the real-world data application described in our paper.
 
 All code was developed and run in R version 4.3.1.
 

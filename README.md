@@ -13,6 +13,4 @@ File description:
 - CILM.stan*: Stan code for C-ILM variants (Models M2, M3, and M4).
 - CILM_cleaned.R: R code to run Stan-based C-ILM models (M2–M4).
 - PPD_*.R: R scripts for generating posterior predictive distributions.
-- FMD_Cumbria_Subset.csv: Subset of the 2001 Foot-and-Mouth Disease (FMD) outbreak data used in the case study.
-- FMD_Application.R: Data processing and application of the model to the 2001 FMD dataset.
 - Plots/: Code used to generate the figures included in the paper.

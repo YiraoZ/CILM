@@ -6,7 +6,7 @@ Code was run in R v4.3.1
 
 File description:
 
-- Simulation_data/: contains simulated epidemic data generated using Generate_epidemics.R and generate.cpp.
+- simulation_data/: contains simulated epidemic data generated using Generate_epidemics.R and generate.cpp.
 - log_likelihood_*.cpp: C++ code for computing the likelihood functions for DPMM and ILMs under basic SILM, C-ILM, and SEIR models.
 - DPMM_cleaned.R: R implementation of the DPMM-C-ILM MCMC algorithm (Algorithm 1 in the paper).
 - BasicILM.stan: Stan code for the basic SILM model.

@@ -26,7 +26,7 @@ Basic_MCMC<-function(d, t_inf, filepath){
   )
   initf1 <- function() {
     list(a0 = 1, beta =2)}
-  fit<-sampling(basic_model, stan_data, init = initf1, iter = 1000, chains = 1)
+  fit<-sampling(basic_model, stan_data, init = initf1, iter = 1000, chains = 4)
   print(summary(fit, pars=c('a0'))$summary)
   print(summary(fit, pars=c('beta'),)$summary)
   samples <-rstan::extract(fit)
@@ -47,7 +47,7 @@ M2_MCMC<-function(d, K, t_inf, c, cluster_id, filepath){
   initf1 <- function() {
     list(a0 = 1, beta =2, tbeta = 2)
   }
-  fit<-sampling(M2_model, stan_data, init = initf1, iter = 1000, chains = 1)
+  fit<-sampling(M2_model, stan_data, init = initf1, iter = 1000, chains = 4)
   print(summary(fit, pars=c('a0'))$summary)
   print(summary(fit, pars=c('beta'),)$summary)
   print(summary(fit, pars=c('tbeta'),)$summary)
@@ -68,7 +68,7 @@ M3_MCMC<-function(d, K, t_inf,cluster_id, filepath){
   initf1 <- function() {
     list(a0 = 1, beta =2, tbeta = 2)
   }
-  fit<-sampling(M3_model, stan_data, init = initf1, iter = 1000, chains = 1)
+  fit<-sampling(M3_model, stan_data, init = initf1, iter = 1000, chains = 4)
   print(summary(fit, pars=c('a0'))$summary)
   print(summary(fit, pars=c('beta'),)$summary)
   print(summary(fit, pars=c('tbeta'),)$summary)
@@ -90,7 +90,7 @@ M4_MCMC<-function(d, K, t_inf, c, cluster_id, filepath){
   initf1 <- function() {
     list(a0 = 1, beta =2, tbeta = 2, delta = 1)
   }
-  fit<-sampling(M4_model, stan_data, init = initf1, iter = 1000, chains = 1)
+  fit<-sampling(M4_model, stan_data, init = initf1, iter = 1000, chains = 4)
   print(summary(fit, pars=c('a0'))$summary)
   print(summary(fit, pars=c('beta'),)$summary)
   print(summary(fit, pars=c('tbeta'),)$summary)
